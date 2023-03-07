@@ -301,7 +301,7 @@ open class TMBarView<Layout: TMBarLayout, Button: TMBarButton, Indicator: TMBarI
                                                  bottom: 0.0,
                                                  right: rightAlignmentInset + contentInset.right)
         scrollView.contentInset = sanitizedContentInset
-        scrollView.contentOffset.x -= sanitizedContentInset.left
+        //scrollView.contentOffset.x -= sanitizedContentInset.left
         
         rootContainerTop.constant = contentInset.top
         rootContainerBottom.constant = contentInset.bottom
