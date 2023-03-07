@@ -303,7 +303,7 @@ open class TMBarView<Layout: TMBarLayout, Button: TMBarButton, Indicator: TMBarI
         scrollView.contentInset = sanitizedContentInset
         printLog("scrollView.contentOffset.x : \(scrollView.contentOffset.x)")
         printLog("sanitizedContentInset.left : \(sanitizedContentInset.left)")
-        //scrollView.contentOffset.x -= sanitizedContentInset.left
+        scrollView.contentOffset.x -= sanitizedContentInset.left - 50.0
         
         rootContainerTop.constant = contentInset.top
         rootContainerBottom.constant = contentInset.bottom
