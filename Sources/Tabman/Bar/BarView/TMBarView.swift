@@ -301,10 +301,16 @@ open class TMBarView<Layout: TMBarLayout, Button: TMBarButton, Indicator: TMBarI
                                                  bottom: 0.0,
                                                  right: rightAlignmentInset + contentInset.right)
         scrollView.contentInset = sanitizedContentInset
+        printLog("scrollView.contentOffset.x : \(scrollView.contentOffset.x)")
+        printLog("sanitizedContentInset.left : \(sanitizedContentInset.left)")
         //scrollView.contentOffset.x -= sanitizedContentInset.left
         
         rootContainerTop.constant = contentInset.top
         rootContainerBottom.constant = contentInset.bottom
+    }
+
+    private func printLog(_ message: String) {
+        debugPrint("alifhasnain: \(message)")
     }
     
     // MARK: Notifications
